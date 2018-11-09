@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+  <head>
+    <title>Weather Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
 
 <body>
-  <h1> Linda Reber</h1>
-  <img width="200" src="headshot_small.jpg" alt="headshot"/>
-  <br>
-  <p>Some stuff about Linda that will be updated later</p>
-  <br>
-  <p>Some more stuff that will be updated later</p>
-  <br>
-  <h3> Connect with Linda</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/linda-reber-cpa-1b693942/" target = blank>LinkedIn</a></li>
-    <li><a href="mailto:llreber@comcast.net">Email Linda</a></li>
-    <li><a href="Pottery.html" target = blank>Pottery Pics</a></li> </ul>
-  <table>
-    <thead>
-      <th>Hobbies</th>
-      <th>Pets</th>
-    </thead>
-  <tbody>
-    <tr>
-      <td>Pottery</td>
-      <td>Olivia</td>
-    </tr>
-    <tr>
-      <td>Reading</td>
-      <td></td>
-    </tr>
-  </tbody>
-  </table>
+
+    <div class="container">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Weather Data</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="LatVsCloud.html">Latitude vs Cloud Cover</a></li>
+                <li><a href="LatVsTemp.html">Latitude vs Temperature</a></li>
+                <li><a href="LatVsWind.html">Latitude vs Wind</a></li>
+                <li><a href="LatVsHumid.html">Latitude vs Humidity</a></li>
+              </ul>
+            </li>
+            <li><a href="comparisons.html">Comparisons</a></li>
+            <li><a href="data.html">Data</a></li>
+        </ul>
+        <div class="row">
+          <div class="col-md-12">
+          <div class="box">
+            <h1>Weather Data</h1>
+          </div>
+         </div>
+
+        </div>
+         <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p>The purpose of this project was to examine the changes in weather versus distance from the equator.  500 cities were randomly selected and weather data was obtained using the OpenWeatherMap API.</p>
+            </div>
+       
+            <div class="col-md-3 col-sm-6">
+              <a href="LatVsTemp.html" target="_blank">                   
+                <img width="300"   src="LatVsTemp.png" alt="Latitude vs Temperture"/>
+              </a>
+            </div>
+       
+           <div class="col-md-3 col-sm-6">
+              <a href="LatVsCloud.html" target="_blank">                   
+                  <img width="300"   src="LatVsCloud.png" alt="Latitude vs Cloud Cover"/>
+                </a>
+           </div>       
+         </div>
+         <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <p>Using the API, weather data was obtained on September 26, 2018.  Using Matplotlib, temperature, percent cloud cover, humidity, and wind speed were plotted versus latitide.  This site provides the results of that analysis.</p>
+              </div>  
+            <div class="col-md-3 col-sm-6">
+                  <a href="LatVsWind.html" target="_blank">                   
+                    <img width="300"   src="LatVswind.png" alt="Latitude vs Wind speed"/>
+                  </a>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                  <a href="LatVsHumid.html" target="_blank">                   
+                      <img width="300"   src="LatVsHumid.png" alt="Latitude vs Humidity"/>
+                    </a>
+            </div>       
+         
+       </div>
+    </div> 
+    
 </body>
 
 </html>

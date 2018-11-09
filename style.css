@@ -1,0 +1,25 @@
+
+.row {
+  background: #88adec;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+
+.nav {
+  padding: 0px;
+  background: #ccffff;
+  color: black;
+}
+
+.box {
+  top: 20%;
+  left: 2%;
+  padding: 40px;
+}
